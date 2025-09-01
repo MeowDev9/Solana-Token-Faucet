@@ -46,8 +46,8 @@ programs/token_faucet/src/
 
 1. Clone the repository:
 ```bash
-git clone <https://github.com/MeowDev9/Solana-Token-Faucet.git>
-cd solana-token-faucet
+git clone https://github.com/MeowDev9/Solana-Token-Faucet.git
+cd Solana-Token-Faucet
 ```
 
 2. Install dependencies:
@@ -159,8 +159,9 @@ pub struct Faucet {
 
 ### Project Structure
 ```
-solana-token-faucet/
+Solana-Token-Faucet/
 ├── programs/           # Rust program code
+│   └── token_faucet/   # Main program
 ├── tests/             # TypeScript tests
 ├── migrations/        # Deployment scripts
 ├── target/           # Build artifacts (gitignored)
@@ -168,9 +169,9 @@ solana-token-faucet/
 ```
 
 ### Key Files
-- `lib.rs`: Main program logic
-- `deploy.ts`: Deployment and initialization script
-- `solana-token-faucet.ts`: Comprehensive test suite
+- `programs/token_faucet/src/lib.rs`: Main program logic
+- `migrations/deploy.ts`: Deployment and initialization script
+- `tests/solana-token-faucet.ts`: Comprehensive test suite
 
 
 
